@@ -44,7 +44,6 @@
 - (IBAction) setUrl:(id)sender;
 - (IBAction) goBackHistory:(id)sender;
 - (IBAction) goForwardHistory:(id)sender;
-- (NSString *)canonicizeUrl:(NSString *)urlStr;
 - (NSString *)loadedUrl;
 
 @end
