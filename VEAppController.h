@@ -2,7 +2,7 @@
  Project: Vespucci
  VEAppController.h
 
- Copyright (C) 2007-2008
+ Copyright (C) 2007-2009
 
  Author: Ing. Riccardo Mottola
 
@@ -27,13 +27,16 @@
 #import <AppKit/AppKit.h>
 
 
-@interface VEAppContoller : NSObject {
+@interface VEAppContoller : NSObject
+{
     IBOutlet NSPanel *prefPanel;
     IBOutlet NSTextField *homePageField;
+    IBOutlet NSMenuItem *bookmarksMenu;
 }
 
 - (IBAction) showPreferences:(id)sender;
 - (IBAction) savePrefs:(id)sender;
 - (IBAction) cancelPrefs:(id)sender;
+- (IBAction) loadBookmark:(id)sender;
 
 @end
