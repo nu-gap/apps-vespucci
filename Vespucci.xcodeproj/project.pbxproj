@@ -61,7 +61,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8503A3F90F1AA4E100E34E67 /* VEMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEMenuItem.h; sourceTree = "<group>"; };
 		8503A3FA0F1AA4E100E34E67 /* VEMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEMenuItem.m; sourceTree = "<group>"; };
-		851B405410A0B0000036C28D /* Info-Vespucci.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = "Info-Vespucci.plist"; sourceTree = "<group>"; };
+		851B405410A0B0000036C28D /* Info-Vespucci.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "Info-Vespucci.plist"; sourceTree = "<group>"; };
 		853AAB430F36609C006B331C /* VE_icons_mac.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VE_icons_mac.icns; sourceTree = "<group>"; };
 		85792E69108E5226001B900E /* Vespucci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vespucci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85792E84108E5226001B900E /* Vespucci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vespucci.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,9 +271,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 8582CAD512232581007CA669 /* Build configuration list for PBXProject "Vespucci" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Vespucci */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				85792E50108E5226001B900E /* Vespucci */,
 				85792E6B108E5226001B900E /* Vespucci-SWK */,
@@ -390,7 +392,6 @@
 				INFOPLIST_FILE = "Info-Vespucci.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(value)";
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Vespucci;
@@ -479,9 +480,9 @@
 				INFOPLIST_FILE = "Info-Vespucci.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(value)";
-				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Vespucci;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
